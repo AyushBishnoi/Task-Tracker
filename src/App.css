@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.task-tracker {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid rgb(212, 210, 210);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-task{
+    width: 500px;
+    margin-right: 3px;
+    padding: 10px ;
+    border-radius: 3px;
+    border: 1px solid rgb(212, 210, 210);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-task:focus{
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.add-btn {
+    margin-left: 3px;
+    padding: 9px 12px;
+    border: 1px solid rgb(115, 206, 255);
+    background-color:rgb(115, 206, 255);
+    cursor: pointer;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-btn:hover{
+    background-color: rgb(89, 178, 227);
+    transition: 0.3s;
 }
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.task button {
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task button:hover {
+    background-color: #3e8e41;
+}
+
+.filter {
+    margin: 20px 10px 10px 10px;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 5px 8px;
+    font-size: 14px;
+    border: 1px solid rgb(212, 210, 210);
+}
+
+
